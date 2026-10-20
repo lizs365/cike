@@ -21,7 +21,7 @@
     "electron": "electron .",
     "pack:mac-arm64": "electron-packager . CIKE --icon=electron/assets/icon.icns --platform=darwin --arch=arm64 --out=dist --overwrite --prune --ignore=\"^/(test|.browsers|dist|.*.zip$)\"",
     "pack:win-x64": "electron-packager . CIKE --icon=electron/assets/icon.ico --platform=win32 --arch=x64 --out=dist --overwrite --prune --win32metadata.CompanyName=CIKE --win32metadata.ProductName=CIKE --win32metadata.FileDescription=CIKE --win32metadata.InternalName=CIKE --ignore=\"^/(test|.browsers|dist|.*\\.zip$)\"",
-    "dist:win": "electron-builder --win nsis --x64",
+    "dist:win": "electron-builder --win nsis --x64 --publish never",
     "dist:win:dir": "electron-builder --win dir --x64"
   },
   "type": "commonjs",
